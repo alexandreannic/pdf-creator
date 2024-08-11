@@ -33,7 +33,7 @@ const ContentList = ({
     <Box sx={{mb: .5, display: 'flex', ...sx}} {...props}>
       {/*{icon}*/}
       <Box>
-        {title && <Box component={wrap ? undefined : 'span'} sx={{fontWeight: 500}}>{title}</Box>}
+        {title && <Box component={wrap ? undefined : 'span'} sx={{fontWeight: 600}}>{title}</Box>}
         {!wrap && <>&nbsp;</>}
         <Box component="span" sx={{color: t.palette.text.secondary}}>{children}</Box>
       </Box>
@@ -51,7 +51,7 @@ export function App({
     <Pdf>
       <PdfSlide>
         <Box sx={{display: 'flex', p: 1}}>
-          <Box sx={{mr: 2, minWidth: 240}}>
+          <Box sx={{mr: 1, minWidth: 240, background: t.palette.background.default, p: 1, borderRadius: '16px'}}>
             <Box sx={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
               <Box sx={{
                 backgroundImage: 'url(/avatar-romane.jpeg)',
@@ -68,9 +68,9 @@ export function App({
             <HeaderItem icon="email" sx={{mb: 2}}>{cv.email}</HeaderItem>
             {cv.skills.map(skill =>
               <Box key={skill.title} sx={{mb: 1}}>
-                <Typography variant="h3" sx={{mt: 2}}>{skill.title}</Typography>
+                <Typography variant="h3" sx={{mt: 1.5}}>{skill.title}</Typography>
                 {skill.content.map(_ =>
-                  <ContentList wrap key={_.title} title={_.title} sx={{mt: 1.25}}>
+                  <ContentList wrap key={_.title} title={_.title} sx={{mt: 1}}>
                     {_.desc && <span dangerouslySetInnerHTML={{__html: _.desc}}/>}
                   </ContentList>
                 )}

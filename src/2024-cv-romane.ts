@@ -45,22 +45,20 @@ export const cvRomane: Cv = {
           date: [new Date(2013), new Date(2014)],
           org: 'Institute of International Humanitarian Studies',
           location: 'Aix-Marseille University, France',
-          title: 'Master’s degree in Humanitarian Action and Humanitarian Law (Master 2) – with high distinction',
-          desc: '<b>Dissertation:</b> "Transitional Justice in Burundi: amnesty at the heart of peace-building and national reconciliation issues."',
+          title: 'Master’s degree Humanitarian Action and Humanitarian Law', desc: 'Master 2 – With high distinction',
         },
         {
           date: [new Date(2013), new Date(2014)],
           org: 'Institute of International Humanitarian Studies',
           location: 'Aix-Marseille University, France',
-          title: 'Advanced Diploma in "Field legal officer for Human Rights"',
-          desc: '<b>Dissertation:</b> "The governance structure of the State of Palestine"',
+          title: 'Advanced Diploma "Field legal officer for Human Rights"',
         },
         {
           date: [new Date(2010), new Date(2014)],
           org: 'Institute of International Humanitarian Studies',
           location: 'Rennes, France',
-          title: 'Master’s degree in “International and European Affairs” – with distinction',
-          desc: '<b>Dissertation:</b> "The Palestinian refugee camps in Lebanon: symbolic spaces of the construction of Palestinian identity in exile, its challenges and limitations (1948-1993)."',
+          title: 'Master’s degree "International and European Affairs"',
+          desc: 'With distinction',
         },
       ]
     },
@@ -86,11 +84,19 @@ export const cvRomane: Cv = {
         {title: 'DRC Protection training, DRC Global Protection Unit Team', date: 'November 2021',},
         {title: 'Hazardous Environment Awareness Training (HEAT)', desc: 'Safer Access, Ukraine', date: 'April 2023',}
       ]
+    },
+    {
+      title: 'Dissertations',
+      content: [
+        {title: 'Transitional Justice in Burundi: amnesty at the heart of peace-building and national reconciliation issues.'},
+        {title: 'The governance structure of the State of Palestine'},
+        {title: 'The Palestinian refugee camps in Lebanon: symbolic spaces of the construction of Palestinian identity in exile, its challenges and limitations (1948-1993).'},
+      ]
     }
   ],
   sections: [
     {
-      title: 'WORK EXPERIENCE',
+      title: 'Work experiences',
       sub: [
         {
           title: 'Country Protection Coordinator',
