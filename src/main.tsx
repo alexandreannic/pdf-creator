@@ -51,7 +51,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           },
           h4: {
             fontSize: `1.rem`,
-            color: baseTheme.palette.text.disabled,
+            color: baseTheme.palette.text.secondary,
           },
         },
         components: {

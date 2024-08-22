@@ -56,6 +56,8 @@ export const PdfSlide = ({
           boxShadow: t => t.shadows[1],
         },
         // pageBreakAfter: 'always',
+        px: 4,
+        py: 2,
         ...props.sx,
       }}
     />
