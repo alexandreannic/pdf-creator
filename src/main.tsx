@@ -7,10 +7,11 @@ import {Box, createTheme, CssBaseline, ThemeProvider} from '@mui/material'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <ThemeProvider theme={() => {
-      const fontSize = 13
+      const fontSize = 11
       const baseTheme = createTheme({})
       const fontFamily = '"Open Sans", sans-serif'
       return createTheme({
+        // spacing: 12,
         palette: {
           background: {
             default: '#f6f8fc',
@@ -19,6 +20,13 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         },
         typography: {
           fontFamily,
+          subtitle1: {
+            color: baseTheme.palette.primary.main,
+            fontSize: '1.95rem',
+            letterSpacing: '2px',
+            fontWeight: 200,
+            lineHeight: '1.1',
+          },
           h1: {
             fontSize: '1.5rem',
             color: baseTheme.palette.primary.main,
@@ -53,8 +61,11 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
                 boxSizing: 'border-box',
               },
               ul: {
-                m: 0,
-                pl: '4px',
+                listStylePosition: 'outside',
+                margin: 0,
+                paddingLeft: 18,
+                // m: 0,
+                // pl: '4px',
               },
               li: {
                 mb: 1,
